@@ -1,6 +1,6 @@
 import React from "react";
 import TeaserText from "../teasers/TeaserText";
-import TeaserPonts from "../teasers/TeaserPoints";
+import TeaserPoints from "../teasers/TeaserPoints";
 import { CONTENT_LENGTH, IMAGE_PLACEHOLDER } from "../../constants";
 
 type Props = {
@@ -28,7 +28,7 @@ const BigItem = ({ item }: Props) => (
     <span>Abv: {item.abv}</span>
     <TeaserText content={item.description} bound={CONTENT_LENGTH.text} />
     <h3>Food Pairing</h3>
-    <TeaserPonts
+    <TeaserPoints
       className="food-container"
       content={item.food_pairing}
       bound={CONTENT_LENGTH.listItems}

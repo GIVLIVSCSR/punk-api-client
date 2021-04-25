@@ -3,8 +3,6 @@ import thunk, { ThunkMiddleware } from "redux-thunk";
 import { rootReducer } from "./reducers";
 import { RootState } from "./reducers";
 
-//ThunkMiddleWare<RootSate, AnyAction> = thunk
-
 const tm: ThunkMiddleware<RootState, AnyAction> = thunk;
 
 const store = createStore(

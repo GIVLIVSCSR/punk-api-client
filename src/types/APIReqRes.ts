@@ -1,7 +1,7 @@
 export type APIResponseData = {
   error: string | null;
   isLoading: boolean | null;
-  products: any[]; // array of objects
+  products: any[];
 };
 
 export enum APIRequestDataTypes {
@@ -15,7 +15,7 @@ type APIRequestSendAction = {
 };
 type APIRequestSuccessAction = {
   type: APIRequestDataTypes.ON_SUCCESS;
-  payload: any[]; // | array of objects - response<products>
+  payload: any[];
 };
 type APIRequestFailureAction = {
   type: APIRequestDataTypes.ON_FAILURE;
